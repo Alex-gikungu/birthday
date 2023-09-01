@@ -199,8 +199,6 @@ button{
 
 /* Import your CSS here */
 
-
-
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
   /* Styles for tablets and smaller screens */
@@ -208,38 +206,22 @@ button{
     padding: 10px;
   }
 
-  /* Define a global style for your application */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+  /* Adjust the input-section */
+  .input-section {
+    display: flex;
+    flex-direction: column; /* Stack input elements vertically on smaller screens */
+    align-items: center; /* Center input elements horizontally */
+    padding: 20px;
+    margin-left: 0; /* Remove left margin */
+  }
 
-/* Default styling for large screens */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  /* Adjust individual input elements */
+  input {
+    width: 100%; /* Make input elements full-width */
+    margin: 10px 0; /* Add vertical spacing between input elements */
+  }
 
-
-
-.input-section{
-  display: flex;
-  margin-top:5px;
-  padding: 40px;
-}
-/* input{
-  background-color: #ffc107;
-  width:200px;
-  height:40px;
-  border-radius: 10px;
-  margin: 30px;
-} */
-
-
-
-
+  /* Add any other responsive styles as needed */
 }
 
 @media screen and (max-width: 576px) {
@@ -250,4 +232,7 @@ body {
 
   /* Additional styles for elements that need to change on smaller screens */
   /* For example, you might want to change font sizes, margins, or hide certain elements */
+  input {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
 }
